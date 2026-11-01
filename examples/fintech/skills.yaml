@@ -81,6 +81,24 @@ skills:
       - google-drive/search_files
       - google-drive/get_file_metadata
 
+  - slug: review-open-tasks
+    title: Review open tasks
+    summary: Read the team's open tasks and list what is overdue, due this week, or has no owner.
+    instructions: >-
+      Find the task list the person or the routine names, search for it first if you were given a
+      name rather than a link, and read the tasks themselves rather than the page that describes
+      them. Keep only the tasks whose own status is not done. For each, take the title, the owner,
+      the due date and the link exactly as recorded. Group them as overdue, due in the next seven
+      days, and without an owner or due date, and count the rest by owner. If more than one list
+      matches the name, say so and list them rather than picking one. If the search or the read
+      returns nothing or an error, say that and say what you searched for; never report an empty
+      list as a week with no open work.
+    tools:
+      - notion/notion-search
+      - notion/notion-fetch
+      - google-drive/search_files
+      - google-drive/read_file_content
+
   - slug: check-a-claim
     title: Check a claim against a source
     summary: Take a statement and check it against what the documents actually say.
